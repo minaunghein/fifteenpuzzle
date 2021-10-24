@@ -1,0 +1,419 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tps.fifteen"
+4    android:installLocation="auto"
+5    android:versionCode="3"
+6    android:versionName="3" >
+7
+8    <uses-sdk
+8-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:8:5-10:41
+9        android:minSdkVersion="28"
+9-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:9:9-34
+10        android:targetSdkVersion="30" />
+10-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:10:9-38
+11
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:12:5-79
+12-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:12:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:13:5-67
+13-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:13:22-64
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:14:5-76
+14-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:14:22-73
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:15:5-80
+15-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:15:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:16:5-79
+16-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:16:22-77
+17
+18    <!-- Optional permission for Analytics to run. -->
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+19-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:27:5-68
+19-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:27:22-65
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.android.gms:play-services-gcm:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/cf2929b6fdaca9b02940732339292b6f/play-services-gcm-12.0.1/AndroidManifest.xml:23:5-82
+20-->[com.google.android.gms:play-services-gcm:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/cf2929b6fdaca9b02940732339292b6f/play-services-gcm-12.0.1/AndroidManifest.xml:23:22-79
+21
+22    <uses-feature
+22-->[com.google.android.gms:play-services-maps:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/31a5bc10be390cbefef43b6aedcb526c/play-services-maps-12.0.1/AndroidManifest.xml:26:5-28:35
+23        android:glEsVersion="0x00020000"
+23-->[com.google.android.gms:play-services-maps:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/31a5bc10be390cbefef43b6aedcb526c/play-services-maps-12.0.1/AndroidManifest.xml:27:9-41
+24        android:required="true" />
+24-->[com.google.android.gms:play-services-maps:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/31a5bc10be390cbefef43b6aedcb526c/play-services-maps-12.0.1/AndroidManifest.xml:28:9-32
+25
+26    <permission
+26-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:28:5-30:47
+27        android:name="com.tps.fifteen.permission.C2D_MESSAGE"
+27-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:29:9-63
+28        android:protectionLevel="signature" />
+28-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:30:9-44
+29
+30    <uses-permission android:name="com.tps.fifteen.permission.C2D_MESSAGE" />
+30-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:32:5-79
+30-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:32:22-76
+31
+32    <application
+32-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:18:5-67:19
+33        android:allowBackup="true"
+33-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:19:9-35
+34        android:extractNativeLibs="false"
+35        android:icon="@drawable/ic_launcher"
+35-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:20:9-45
+36        android:label="@string/app_name"
+36-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:21:9-41
+37        android:theme="@style/MyTheme" >
+37-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:22:9-39
+38        <meta-data
+38-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:23:9-25:69
+39            android:name="com.google.android.gms.version"
+39-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:24:13-58
+40            android:value="@integer/google_play_services_version" />
+40-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:25:13-66
+41
+42        <activity
+42-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:27:9-32:20
+43            android:name="com.tps.fifteen.GameScreen"
+43-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:28:13-54
+44            android:label="@string/app_name"
+44-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:29:13-45
+45            android:screenOrientation="portrait"
+45-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:30:13-49
+46            android:windowSoftInputMode="stateHidden" >
+46-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:31:13-54
+47        </activity>
+48        <activity
+48-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:33:9-42:20
+49            android:name="com.tps.fifteen.StartScreen"
+49-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:34:13-40
+50            android:label="@string/app_name"
+50-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:35:13-45
+51            android:screenOrientation="portrait" >
+51-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:36:13-49
+52            <intent-filter>
+52-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:37:13-41:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:38:17-69
+53-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:38:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:40:17-77
+55-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:40:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:43:9-47:20
+59            android:name="com.tps.fifteen.About"
+59-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:44:13-34
+60            android:label="@string/app_name"
+60-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:45:13-45
+61            android:screenOrientation="portrait" >
+61-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:46:13-49
+62        </activity>
+63        <activity
+63-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:48:9-53:20
+64            android:name="com.tps.fifteen.Tutorial"
+64-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:49:13-37
+65            android:label="Tutorial"
+65-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:50:13-37
+66            android:screenOrientation="portrait"
+66-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:51:13-49
+67            android:theme="@style/Transparent" >
+67-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:52:13-47
+68        </activity>
+69        <activity
+69-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:54:9-58:20
+70            android:name="com.tps.fifteen.SetTheme"
+70-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:55:13-37
+71            android:label="@string/app_name"
+71-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:56:13-45
+72            android:screenOrientation="portrait" >
+72-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:57:13-49
+73        </activity>
+74
+75        <!-- For ADMOB -->
+76        <activity
+76-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:61:9-63:125
+77            android:name="com.google.android.gms.ads.AdActivity"
+77-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:62:13-65
+78            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+78-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:63:13-122
+79            android:exported="false"
+79-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/caf3a2d1d22cefe690fab601763d932d/play-services-ads-lite-12.0.1/AndroidManifest.xml:32:13-37
+80            android:theme="@android:style/Theme.Translucent" />
+80-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/caf3a2d1d22cefe690fab601763d932d/play-services-ads-lite-12.0.1/AndroidManifest.xml:33:13-61
+81
+82        <!-- For Google Analytics -->
+83        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+83-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:66:9-97
+83-->/Users/minaunghein/Desktop/fifteenpuzzle/app/src/main/AndroidManifest.xml:66:18-94
+84
+85        <receiver
+85-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:30:9-34:20
+86            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+86-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:31:13-78
+87            android:enabled="true"
+87-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:32:13-35
+88            android:exported="false" >
+88-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:33:13-37
+89        </receiver>
+90
+91        <service
+91-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:36:9-39:40
+92            android:name="com.google.android.gms.analytics.AnalyticsService"
+92-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:37:13-77
+93            android:enabled="true"
+93-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:38:13-35
+94            android:exported="false" />
+94-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:39:13-37
+95        <service
+95-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:40:9-44:72
+96            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+96-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:41:13-80
+97            android:enabled="true"
+97-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:42:13-35
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:43:13-37
+99            android:permission="android.permission.BIND_JOB_SERVICE" />
+99-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/08cd5bcbfcdf387fd6d66ebc6ef8dcea/play-services-analytics-12.0.1/AndroidManifest.xml:44:13-69
+100
+101        <activity
+101-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:25:9-34:20
+102            android:name="com.google.android.gms.appinvite.PreviewActivity"
+102-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:26:13-76
+103            android:exported="true"
+103-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:27:13-36
+104            android:theme="@style/Theme.AppInvite.Preview" >
+104-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:28:13-59
+105            <intent-filter>
+105-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:29:13-33:29
+106                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+106-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:30:17-90
+106-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:30:25-87
+107
+108                <category android:name="android.intent.category.DEFAULT" />
+108-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:32:17-76
+108-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:32:27-73
+109            </intent-filter>
+110        </activity>
+111        <activity
+111-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:23:9-27:75
+112            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+112-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:24:13-93
+113            android:excludeFromRecents="true"
+113-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:25:13-46
+114            android:exported="false"
+114-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:26:13-37
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+115-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:27:13-72
+116        <!--
+117            Service handling Google Sign-In user revocation. For apps that do not integrate with
+118            Google Sign-In, this service will never be started.
+119        -->
+120        <service
+120-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:33:9-36:110
+121            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+121-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:34:13-89
+122            android:exported="true"
+122-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:35:13-36
+123            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+123-->[com.google.android.gms:play-services-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/1d9cc34c014fbe23e68ecff0dd203f5e/play-services-auth-12.0.1/AndroidManifest.xml:36:13-107
+124
+125        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+125-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/121c40f2f8d23e6abba80ad0e6d0cc10/play-services-cast-framework-12.0.1/AndroidManifest.xml:8:9-100
+125-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/121c40f2f8d23e6abba80ad0e6d0cc10/play-services-cast-framework-12.0.1/AndroidManifest.xml:8:19-97
+126
+127        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+127-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/121c40f2f8d23e6abba80ad0e6d0cc10/play-services-cast-framework-12.0.1/AndroidManifest.xml:10:9-104
+127-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/121c40f2f8d23e6abba80ad0e6d0cc10/play-services-cast-framework-12.0.1/AndroidManifest.xml:10:18-101
+128        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+128-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/121c40f2f8d23e6abba80ad0e6d0cc10/play-services-cast-framework-12.0.1/AndroidManifest.xml:11:9-93
+128-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/121c40f2f8d23e6abba80ad0e6d0cc10/play-services-cast-framework-12.0.1/AndroidManifest.xml:11:18-90
+129
+130        <activity
+130-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:23:9-29:75
+131            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+131-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:24:13-85
+132            android:excludeFromRecents="true"
+132-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:25:13-46
+133            android:exported="true"
+133-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:26:13-36
+134            android:launchMode="singleInstance"
+134-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:27:13-48
+135            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+135-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:28:13-102
+136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+136-->[com.google.firebase:firebase-auth:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/6c81f622bfff0816433cbd789916e7ad/firebase-auth-12.0.1/AndroidManifest.xml:29:13-72
+137        <activity
+137-->[com.google.android.gms:play-services-base:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/815c06c92935356b8131f34fdc120b29/play-services-base-12.0.1/AndroidManifest.xml:23:9-26:75
+138            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+138-->[com.google.android.gms:play-services-base:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/815c06c92935356b8131f34fdc120b29/play-services-base-12.0.1/AndroidManifest.xml:24:13-79
+139            android:exported="false"
+139-->[com.google.android.gms:play-services-base:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/815c06c92935356b8131f34fdc120b29/play-services-base-12.0.1/AndroidManifest.xml:25:13-37
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+140-->[com.google.android.gms:play-services-base:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/815c06c92935356b8131f34fdc120b29/play-services-base-12.0.1/AndroidManifest.xml:26:13-72
+141        <!--
+142             FirebaseMessagingService performs security checks at runtime,
+143             no need for explicit permissions despite exported="true"
+144        -->
+145        <service
+145-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:28:9-34:19
+146            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+146-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:29:13-82
+147            android:exported="true" >
+147-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:30:13-36
+148            <intent-filter android:priority="-500" >
+148-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:31:13-33:29
+148-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:31:28-51
+149                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+149-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:32:17-78
+149-->[com.google.firebase:firebase-messaging:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/69fd7e1ccadb79963281a07a85fef318/firebase-messaging-12.0.1/AndroidManifest.xml:32:25-75
+150            </intent-filter>
+151        </service>
+152        <service
+152-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:27:9-30:40
+153            android:name="com.google.android.gms.tagmanager.TagManagerService"
+153-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:28:13-79
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:29:13-35
+155            android:exported="false" />
+155-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:30:13-37
+156
+157        <activity
+157-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:32:9-44:20
+158            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+158-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:33:13-87
+159            android:exported="true"
+159-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:34:13-36
+160            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+160-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:35:13-37
+161            <intent-filter>
+161-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:36:13-43:29
+162                <data android:scheme="tagmanager.c.com.tps.fifteen" />
+162-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:37:17-72
+162-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:37:23-69
+163
+164                <action android:name="android.intent.action.VIEW" />
+164-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:39:17-69
+164-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:39:25-66
+165
+166                <category android:name="android.intent.category.DEFAULT" />
+166-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:32:17-76
+166-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/41373096c87a3e33c3cc0c6139fa4442/play-services-appinvite-12.0.1/AndroidManifest.xml:32:27-73
+167                <category android:name="android.intent.category.BROWSABLE" />
+167-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:42:17-78
+167-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c2135a09dbbbe114afb58174ba504565/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:42:27-75
+168            </intent-filter>
+169        </activity>
+170
+171        <receiver
+171-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:28:9-32:20
+172            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+172-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:29:13-85
+173            android:enabled="true"
+173-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:30:13-35
+174            android:exported="false" >
+174-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:31:13-37
+175        </receiver>
+176        <receiver
+176-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:33:9-41:20
+177            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+177-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:34:13-100
+178            android:enabled="true"
+178-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:35:13-35
+179            android:exported="true"
+179-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:36:13-36
+180            android:permission="android.permission.INSTALL_PACKAGES" >
+180-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:37:13-69
+181            <intent-filter>
+181-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:38:13-40:29
+182                <action android:name="com.android.vending.INSTALL_REFERRER" />
+182-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:39:17-79
+182-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:39:25-76
+183            </intent-filter>
+184        </receiver>
+185
+186        <service
+186-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:43:9-46:40
+187            android:name="com.google.android.gms.measurement.AppMeasurementService"
+187-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:44:13-84
+188            android:enabled="true"
+188-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:45:13-35
+189            android:exported="false" />
+189-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:46:13-37
+190        <service
+190-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:47:9-51:72
+191            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+191-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:48:13-87
+192            android:enabled="true"
+192-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:49:13-35
+193            android:exported="false"
+193-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:50:13-37
+194            android:permission="android.permission.BIND_JOB_SERVICE" />
+194-->[com.google.firebase:firebase-analytics:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/c024d0eb0f7133c9a44bf5aef5ba3bf4/firebase-analytics-12.0.1/AndroidManifest.xml:51:13-69
+195
+196        <receiver
+196-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:35:9-44:20
+197            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+197-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:36:13-78
+198            android:exported="true"
+198-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:37:13-36
+199            android:permission="com.google.android.c2dm.permission.SEND" >
+199-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:38:13-73
+200            <intent-filter>
+200-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:39:13-43:29
+201                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+201-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:40:17-81
+201-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:40:25-78
+202
+203                <category android:name="com.tps.fifteen" />
+203-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:42:17-61
+203-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:42:27-58
+204            </intent-filter>
+205        </receiver>
+206        <!--
+207             FirebaseInstanceIdService performs security checks at runtime,
+208             no need for explicit permissions despite exported="true"
+209        -->
+210        <service
+210-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:50:9-56:19
+211            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+211-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:51:13-77
+212            android:exported="true" >
+212-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:52:13-36
+213            <intent-filter android:priority="-500" >
+213-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:53:13-55:29
+213-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:53:28-51
+214                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+214-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:54:17-80
+214-->[com.google.firebase:firebase-iid:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/ffecf2736f83b40d51ecfa0c653dba9b/firebase-iid-12.0.1/AndroidManifest.xml:54:25-77
+215            </intent-filter>
+216        </service>
+217
+218        <provider
+218-->[com.google.firebase:firebase-common:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/3e55d6768688e71650ec3d9a01b70947/firebase-common-12.0.1/AndroidManifest.xml:8:9-12:39
+219            android:name="com.google.firebase.provider.FirebaseInitProvider"
+219-->[com.google.firebase:firebase-common:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/3e55d6768688e71650ec3d9a01b70947/firebase-common-12.0.1/AndroidManifest.xml:9:13-77
+220            android:authorities="com.tps.fifteen.firebaseinitprovider"
+220-->[com.google.firebase:firebase-common:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/3e55d6768688e71650ec3d9a01b70947/firebase-common-12.0.1/AndroidManifest.xml:10:13-72
+221            android:exported="false"
+221-->[com.google.firebase:firebase-common:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/3e55d6768688e71650ec3d9a01b70947/firebase-common-12.0.1/AndroidManifest.xml:11:13-37
+222            android:initOrder="100" />
+222-->[com.google.firebase:firebase-common:12.0.1] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/3e55d6768688e71650ec3d9a01b70947/firebase-common-12.0.1/AndroidManifest.xml:12:13-36
+223
+224        <meta-data
+224-->[com.android.support:mediarouter-v7:26.1.0] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/404735b8abd7ffb1ef5f0cb331df0cfa/mediarouter-v7-26.1.0/AndroidManifest.xml:23:9-25:38
+225            android:name="android.support.VERSION"
+225-->[com.android.support:mediarouter-v7:26.1.0] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/404735b8abd7ffb1ef5f0cb331df0cfa/mediarouter-v7-26.1.0/AndroidManifest.xml:24:13-51
+226            android:value="26.1.0" />
+226-->[com.android.support:mediarouter-v7:26.1.0] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/404735b8abd7ffb1ef5f0cb331df0cfa/mediarouter-v7-26.1.0/AndroidManifest.xml:25:13-35
+227        <meta-data
+227-->[android.arch.lifecycle:runtime:1.0.0] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/03a1c6fed85d5dc02c3d428f4fd94521/runtime-1.0.0/AndroidManifest.xml:25:9-27:47
+228            android:name="android.arch.lifecycle.VERSION"
+228-->[android.arch.lifecycle:runtime:1.0.0] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/03a1c6fed85d5dc02c3d428f4fd94521/runtime-1.0.0/AndroidManifest.xml:26:13-58
+229            android:value="27.0.0-SNAPSHOT" />
+229-->[android.arch.lifecycle:runtime:1.0.0] /Users/minaunghein/.gradle/caches/transforms-2/files-2.1/03a1c6fed85d5dc02c3d428f4fd94521/runtime-1.0.0/AndroidManifest.xml:27:13-44
+230    </application>
+231
+232</manifest>
